@@ -6,7 +6,7 @@ const { errors } = require('../helpers/Errors');
 
 const exampleRouter = new Router();
 
-exampleRouter.get('/', (req, res) => res.send('Hello, I am alive :)'));
+exampleRouter.get('/', (req, res) => res.send({"key":"val"}));
 
 exampleRouter.get('/not-ok-example', () => {
   throw errors.forbidden();
